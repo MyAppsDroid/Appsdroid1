@@ -9,50 +9,85 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     android:background="#fffffff0"
-    android:layout_marginTop="20dp"
     tools:context=".MyActivity">
 
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#fffffff0"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:id="@+id/errorMessage"
+            android:background="#fffffff0"
+            android:textSize="15sp"
+            android:textColor="#FF0000"
+            android:maxLines="1"
+            android:textAlignment="viewStart"
+            android:gravity="start" />
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_marginBottom="10dp"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:background="#ffffffff">
+        android:background="#fffffff0"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp">
         <TextView
             android:layout_width="0dp"
-            android:layout_height="80dp"
-            android:layout_weight="0.36"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:id="@+id/txtResult"
-            android:background="#ffffffff" />
+            android:background="@drawable/textbox"
+            android:textSize="55sp"
+            android:gravity="end"
+            android:paddingRight="10dp"
+            android:paddingEnd="10dp"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:ellipsize="start"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#ffffffff">
+        android:background="#fffffff0">
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="60dp"
+            android:layout_height="fill_parent"
             android:orientation="horizontal"
-            android:weightSum="1.0">
+            android:layout_weight="0.15">
 
             <Button
                 android:text="1"
                 android:onClick="btnClicked"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:id="@+id/One"
                 android:background="@drawable/mybutton_numbers"
                 android:layout_marginBottom="2dp"
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="2"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
                 android:onClick="btnClicked"
                 android:id="@+id/Two"
                 android:background="@drawable/mybutton_numbers"
@@ -60,23 +95,29 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="3"
                 android:onClick="btnClicked"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:id="@+id/Three"
                 android:background="@drawable/mybutton_numbers"
                 android:layout_marginBottom="2dp"
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="+"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnOpClicked"
                 android:id="@+id/Plus"
                 android:background="@drawable/mybutton_basic_operations"
@@ -84,17 +125,21 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.15">
 
-            <Button
+        <Button
                 android:text="4"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnClicked"
                 android:id="@+id/Four"
                 android:background="@drawable/mybutton_numbers"
@@ -102,11 +147,14 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="5"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.25"
                 android:onClick="btnClicked"
                 android:id="@+id/Five"
                 android:background="@drawable/mybutton_numbers"
@@ -114,11 +162,14 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="6"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnClicked"
                 android:id="@+id/Six"
                 android:background="@drawable/mybutton_numbers"
@@ -126,11 +177,14 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="-"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnOpClicked"
                 android:id="@+id/Minus"
                 android:background="@drawable/mybutton_basic_operations"
@@ -138,28 +192,36 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-            <Button
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.15">
+
+        <Button
                 android:text="7"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnClicked"
                 android:id="@+id/Seven"
                 android:background="@drawable/mybutton_numbers"
                 android:layout_marginBottom="2dp"
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+            android:layout_marginLeft="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"/>
             <Button
                 android:text="8"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnClicked"
                 android:id="@+id/Eight"
                 android:background="@drawable/mybutton_numbers"
@@ -167,11 +229,14 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="9"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnClicked"
                 android:id="@+id/Nine"
                 android:background="@drawable/mybutton_numbers"
@@ -179,11 +244,14 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="*"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnOpClicked"
                 android:id="@+id/Multiply"
                 android:background="@drawable/mybutton_basic_operations"
@@ -191,74 +259,20 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
-            <Button
-                android:text="Clear"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/Clear"
-                android:onClick="btnClear"
-                android:background="@drawable/mybutton_clr_back"
-                android:layout_marginBottom="2dp"
-                android:layout_marginTop="7dp"
-                android:textSize="20sp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"
-                />
-            <Button
-                android:text="0"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
-                android:onClick="btnClicked"
-                android:id="@+id/Zero"
-                android:background="@drawable/mybutton_numbers"
-                android:layout_marginBottom="2dp"
-                android:layout_marginTop="7dp"
-                android:textSize="30sp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
-
-            <Button
-                android:text="BCK"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
-                android:onClick="btnbsClicked"
-                android:id="@+id/Backspace"
-                android:background="@drawable/mybutton_clr_back"
-                android:layout_marginBottom="2dp"
-                android:layout_marginTop="7dp"
-                android:textSize="20sp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
-            <Button
-                android:text="/"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
-                android:onClick="btnOpClicked"
-                android:id="@+id/Divide"
-                android:background="@drawable/mybutton_basic_operations"
-                android:layout_marginBottom="2dp"
-                android:layout_marginTop="7dp"
-                android:textSize="30sp"
-                android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"/>
-
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="60dp"
-            android:orientation="horizontal">
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.15">
             <Button
                 android:text="."
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnClicked"
                 android:id="@+id/dot"
                 android:background="@drawable/mybutton_basic_operations"
@@ -266,12 +280,86 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
 
             <Button
-                android:text="sqr"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:text="0"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
+                android:onClick="btnClicked"
+                android:id="@+id/Zero"
+                android:background="@drawable/mybutton_numbers"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="7dp"
+                android:textSize="30sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
+                android:text=" = "
+                android:onClick="OnClickEquals"
+                android:id="@+id/Equals"
+                android:background="@drawable/mybutton_equals"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="7dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+
+
+            <Button
+                android:text="/"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
+                android:onClick="btnOpClicked"
+                android:id="@+id/Divide"
+                android:background="@drawable/mybutton_basic_operations"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="7dp"
+                android:textSize="30sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:layout_weight="0.15">
+            <Button
+                android:text="Clear"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
+                android:id="@+id/Clear"
+                android:onClick="btnClear"
+                android:background="@drawable/mybutton_clr_back"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="7dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+
+            <Button
+                android:text="sqrt"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnsqrClicked"
                 android:id="@+id/sqr"
                 android:background="@drawable/mybutton_special_operations"
@@ -279,11 +367,14 @@
                 android:layout_marginTop="7dp"
                 android:textSize="20sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="%"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnOpClicked"
                 android:id="@+id/Percent"
                 android:background="@drawable/mybutton_special_operations"
@@ -291,29 +382,36 @@
                 android:layout_marginTop="7dp"
                 android:textSize="30sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
-                android:text="I"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
-                android:onClick="btnIClicked"
-                android:id="@+id/Inverse"
-                android:background="@drawable/mybutton_special_operations"
+                android:text="BACK"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
+                android:onClick="btnbsClicked"
+                android:id="@+id/Backspace"
+                android:background="@drawable/mybutton_clr_back"
                 android:layout_marginBottom="2dp"
                 android:layout_marginTop="7dp"
-                android:textSize="30sp"
+                android:textSize="20sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="70dp"
+            android:layout_weight="0.15"
+            android:layout_height="fill_parent"
             android:orientation="horizontal">
             <Button
                 android:text="Mod"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnOpClicked"
                 android:id="@+id/mod"
                 android:background="@drawable/mybutton_special_operations"
@@ -321,11 +419,14 @@
                 android:layout_marginTop="7dp"
                 android:textSize="20sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
-                android:text="x^2"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:text="sqr"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnSqClicked"
                 android:id="@+id/square"
                 android:background="@drawable/mybutton_special_operations"
@@ -333,11 +434,14 @@
                 android:layout_marginTop="7dp"
                 android:textSize="20sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
                 android:text="x^y"
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
                 android:onClick="btnRClicked"
                 android:id="@+id/rasieto"
                 android:background="@drawable/mybutton_special_operations"
@@ -345,29 +449,66 @@
                 android:layout_marginTop="7dp"
                 android:textSize="20sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="15dp"/>
-
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
             <Button
-                android:layout_width="68dp"
-                android:layout_height="wrap_content"
-                android:text=" = "
-                android:onClick="OnClickEquals"
-                android:id="@+id/Equals"
-                android:background="@drawable/mybutton_equals"
+                android:text="INV"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.25"
+                android:layout_height="fill_parent"
+                android:onClick="btnIClicked"
+                android:id="@+id/Inverse"
+                android:background="@drawable/mybutton_special_operations"
                 android:layout_marginBottom="2dp"
                 android:layout_marginTop="7dp"
+                android:textSize="20sp"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"
-                android:textSize="20sp"/>
-        </LinearLayout>
-    <LinearLayout
-        android:layout_marginTop="2dp"
-        android:layout_marginBottom="2dp"
-        android:layout_width="1dp"
-        android:layout_height="match_parent"
-        android:background="#ffffffff"
-        android:orientation="horizontal"/>
-    </LinearLayout>
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
 
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="5dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#fffffff0"
+            android:layout_marginTop="2dp" >
+            <Button
+                android:text="Buy Pro Version"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.50"
+                android:layout_height="25dp"
+                android:onClick="btnProClicked"
+                android:id="@+id/pro"
+                android:background="@drawable/mybutton_numbers"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="7dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+            <Button
+                android:text="Help"
+                android:layout_width="fill_parent"
+                android:layout_weight="0.50"
+                android:layout_height="25dp"
+                android:onClick="btnHelpClicked"
+                android:id="@+id/help"
+                android:background="@drawable/mybutton_numbers"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="7dp"
+                android:textSize="12sp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
